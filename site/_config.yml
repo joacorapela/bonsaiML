@@ -1,0 +1,14 @@
+collections:
+  minutes:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "minutes"
+    values:
+      layout: "minute"
+  - scope:
+      path: ""
+    values:
+      layout: "default"

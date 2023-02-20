@@ -1,0 +1,15 @@
+---
+layout: default
+title: Minutes
+---
+<h1>Minutes</h1>
+
+<ul>
+    {% for minute in site.minutes %}
+    <li>
+      <h2><a href="{{ minute.url }}">{{ minute.date | date_to_string }}</a></h2>
+      <!-- {{ minute.excerpt | markdownify }} -->
+      <!-- {{ post.content | strip_html | truncatewords: 50 }} -->
+    </li>
+    {% endfor %}
+</ul>
